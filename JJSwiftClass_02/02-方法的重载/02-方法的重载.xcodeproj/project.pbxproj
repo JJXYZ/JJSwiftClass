@@ -1,0 +1,295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7069698E1C0A8DC600FB7679 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7069698D1C0A8DC600FB7679 /* AppDelegate.swift */; };
+		706969901C0A8DC600FB7679 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7069698F1C0A8DC600FB7679 /* ViewController.swift */; };
+		706969931C0A8DC600FB7679 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 706969911C0A8DC600FB7679 /* Main.storyboard */; };
+		706969951C0A8DC600FB7679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 706969941C0A8DC600FB7679 /* Assets.xcassets */; };
+		706969981C0A8DC600FB7679 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 706969961C0A8DC600FB7679 /* LaunchScreen.storyboard */; };
+		706969A01C0A8DDE00FB7679 /* MathTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7069699F1C0A8DDE00FB7679 /* MathTool.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7069698A1C0A8DC600FB7679 /* 02-方法的重载.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "02-方法的重载.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7069698D1C0A8DC600FB7679 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7069698F1C0A8DC600FB7679 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		706969921C0A8DC600FB7679 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		706969941C0A8DC600FB7679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		706969971C0A8DC600FB7679 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		706969991C0A8DC600FB7679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7069699F1C0A8DDE00FB7679 /* MathTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathTool.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		706969871C0A8DC600FB7679 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		706969811C0A8DC600FB7679 = {
+			isa = PBXGroup;
+			children = (
+				7069698C1C0A8DC600FB7679 /* 02-方法的重载 */,
+				7069698B1C0A8DC600FB7679 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7069698B1C0A8DC600FB7679 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7069698A1C0A8DC600FB7679 /* 02-方法的重载.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7069698C1C0A8DC600FB7679 /* 02-方法的重载 */ = {
+			isa = PBXGroup;
+			children = (
+				7069698D1C0A8DC600FB7679 /* AppDelegate.swift */,
+				7069698F1C0A8DC600FB7679 /* ViewController.swift */,
+				7069699F1C0A8DDE00FB7679 /* MathTool.swift */,
+				706969911C0A8DC600FB7679 /* Main.storyboard */,
+				706969941C0A8DC600FB7679 /* Assets.xcassets */,
+				706969961C0A8DC600FB7679 /* LaunchScreen.storyboard */,
+				706969991C0A8DC600FB7679 /* Info.plist */,
+			);
+			path = "02-方法的重载";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		706969891C0A8DC600FB7679 /* 02-方法的重载 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7069699C1C0A8DC600FB7679 /* Build configuration list for PBXNativeTarget "02-方法的重载" */;
+			buildPhases = (
+				706969861C0A8DC600FB7679 /* Sources */,
+				706969871C0A8DC600FB7679 /* Frameworks */,
+				706969881C0A8DC600FB7679 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "02-方法的重载";
+			productName = "02-方法的重载";
+			productReference = 7069698A1C0A8DC600FB7679 /* 02-方法的重载.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		706969821C0A8DC600FB7679 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = xiaomage;
+				TargetAttributes = {
+					706969891C0A8DC600FB7679 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = 706969851C0A8DC600FB7679 /* Build configuration list for PBXProject "02-方法的重载" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 706969811C0A8DC600FB7679;
+			productRefGroup = 7069698B1C0A8DC600FB7679 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				706969891C0A8DC600FB7679 /* 02-方法的重载 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		706969881C0A8DC600FB7679 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				706969981C0A8DC600FB7679 /* LaunchScreen.storyboard in Resources */,
+				706969951C0A8DC600FB7679 /* Assets.xcassets in Resources */,
+				706969931C0A8DC600FB7679 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		706969861C0A8DC600FB7679 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				706969A01C0A8DDE00FB7679 /* MathTool.swift in Sources */,
+				706969901C0A8DC600FB7679 /* ViewController.swift in Sources */,
+				7069698E1C0A8DC600FB7679 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		706969911C0A8DC600FB7679 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				706969921C0A8DC600FB7679 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		706969961C0A8DC600FB7679 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				706969971C0A8DC600FB7679 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7069699A1C0A8DC600FB7679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7069699B1C0A8DC600FB7679 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7069699D1C0A8DC600FB7679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "02-方法的重载/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "xmg.-2------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7069699E1C0A8DC600FB7679 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "02-方法的重载/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "xmg.-2------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		706969851C0A8DC600FB7679 /* Build configuration list for PBXProject "02-方法的重载" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7069699A1C0A8DC600FB7679 /* Debug */,
+				7069699B1C0A8DC600FB7679 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7069699C1C0A8DC600FB7679 /* Build configuration list for PBXNativeTarget "02-方法的重载" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7069699D1C0A8DC600FB7679 /* Debug */,
+				7069699E1C0A8DC600FB7679 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 706969821C0A8DC600FB7679 /* Project object */;
+}
