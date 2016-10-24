@@ -14,14 +14,14 @@ class HttpTool: NSObject {
     
     // 闭包的类型:(参数列表)->(返回值)
     // 建议:以后写闭包类型直接:()->()
-    func requestData(callBack : ()->()) {
+    func requestData(_ callBack : @escaping ()->()) {
         
         self.callBack = callBack
         
-        dispatch_async(dispatch_get_global_queue(0, 0)) { () -> Void in
-            print("正在网络请求:\(NSThread.currentThread())")
+        DispatchQueue.global(priority: 0).async { () -> Void in
+            print("正在网络请求:\(Thread.current)")
             
-            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+            DispatchQueue.main.async(execute: { () -> Void in
                 callBack()
             })
         }

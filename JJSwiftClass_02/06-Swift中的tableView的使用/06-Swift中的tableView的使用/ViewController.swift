@@ -31,30 +31,30 @@ class ViewController: UIViewController {
 // extension只能扩充方法
 extension ViewController : UITableViewDataSource, UITableViewDelegate {
     // MARK:- tableView数据源方法
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 20
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let ID = "Cell"
         
         // 从缓冲池中取出cell
-        var cell = tableView.dequeueReusableCellWithIdentifier(ID)
+        var cell = tableView.dequeueReusableCell(withIdentifier: ID)
         
         // 判断是否为nil,如果为nil,则创建
         if cell == nil {
-            cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: ID)
+            cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: ID)
         }
         
-        cell?.textLabel?.text = "测试数据\(indexPath.row)"
+        cell?.textLabel?.text = "测试数据\((indexPath as NSIndexPath).row)"
         
         return cell!
     }
     
     // MARK:- tableView代理方法
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        print("点击了\(indexPath.row)")
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("点击了\((indexPath as NSIndexPath).row)")
     }
 }
 

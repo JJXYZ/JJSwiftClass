@@ -19,7 +19,7 @@ class Student: NSObject {
     
     init(dict : [String : AnyObject]) {
         super.init()
-        self.setValuesForKeysWithDictionary(dict)
+        self.setValuesForKeys(dict)
     }
     
     func insertStudent() {

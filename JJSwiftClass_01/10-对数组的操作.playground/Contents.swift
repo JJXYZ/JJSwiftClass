@@ -8,19 +8,19 @@ var names : [AnyObject] = [AnyObject]()
 
 // 1.对数组的基本操作
 // 1> 添加元素
-names.append("why")
-names.append("lmj")
-names.append("lnj")
-names.append(18)
-names.append(1.88)
+names.append("why" as AnyObject)
+names.append("lmj" as AnyObject)
+names.append("lnj" as AnyObject)
+names.append(18 as AnyObject)
+names.append(1.88 as AnyObject)
 
 // 2> 删除元素
 names.removeLast()
-names.removeAtIndex(3)
+names.remove(at: 3)
 names
 
 // 3> 修改元素
-names[0] = "yz"
+names[0] = "yz" as AnyObject
 names
 
 // 4> 取出数组中的值
@@ -48,8 +48,8 @@ for item in names[1..<3] {
 
 // 3.数组的合并
 // 1> 类型相同的数组的合并
-let array1 = ["why", "+86 110", 18]
-let array2 = [1.88, "china"]
+let array1 = ["why", "+86 110", 18] as [Any]
+let array2 = [1.88, "china"] as [Any]
 let array3 = array1 + array2
 
 // 2> 类型不同的数组的合并
@@ -58,11 +58,11 @@ let ages = [18, 20, 25]
 var array4 = [AnyObject]()
 
 for item in names1 {
-    array4.append(item)
+    array4.append(item as AnyObject)
 }
 
 for item in ages {
-    array4.append(item)
+    array4.append(item as AnyObject)
 }
 
 array4

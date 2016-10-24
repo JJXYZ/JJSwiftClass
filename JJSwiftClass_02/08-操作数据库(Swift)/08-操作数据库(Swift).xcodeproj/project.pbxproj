@@ -108,6 +108,7 @@
 				TargetAttributes = {
 					70F5D9C91C0AFFAD00371BD1 = {
 						CreatedOnToolsVersion = 7.1;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -266,6 +267,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "xmg.-8-------Swift-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "08-操作数据库(Swift)/SQLite_Bridge.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -278,6 +280,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "xmg.-8-------Swift-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "08-操作数据库(Swift)/SQLite_Bridge.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -300,6 +303,7 @@
 				70F5D9DE1C0AFFAD00371BD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

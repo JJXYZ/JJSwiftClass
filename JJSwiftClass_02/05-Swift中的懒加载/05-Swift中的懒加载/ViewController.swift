@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         print(names)
         print(names)
         print(names)

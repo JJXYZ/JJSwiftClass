@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         /*
         给闭包赋值:
@@ -83,9 +83,9 @@ class ViewController: UIViewController {
         */
         httpTool.requestData { [unowned self] () -> () in
             print("已经请求到网络数据");
-            print("更新界面:\(NSThread.currentThread())")
+            print("更新界面:\(Thread.current)")
             
-            self.view.backgroundColor = UIColor.orangeColor()
+            self.view.backgroundColor = UIColor.orange
         }
     }
     

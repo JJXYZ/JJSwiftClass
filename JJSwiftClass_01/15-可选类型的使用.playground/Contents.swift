@@ -7,10 +7,10 @@ let url : NSURL? = NSURL(string: urlString)
 
 // 判断url是否有值,来决定是否创建NSURLRequest对象
 if url != nil {
-    NSURLRequest(URL: url!)
+    NSURLRequest(url: url! as URL)
 }
 
 if let tempUrl = url {
-    NSURLRequest(URL: tempUrl)
+    NSURLRequest(url: tempUrl as URL)
 }
 

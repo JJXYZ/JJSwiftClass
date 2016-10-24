@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         /*
         let p = Person()
         p.name = "why"
@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         // let p = Person(name: "yz", age: 20)
         
         let dict = ["name" : "lmj", "age" : "25"]
-        let p = Person(dict: dict)
+        let p = Person(dict: dict as [String : AnyObject])
         
         print("name:\(p.name!), age:\(p.age)")
     }

@@ -39,6 +39,6 @@ class Person: NSObject {
         
         // 如果通过KVC字典转模型,必须先调用super.init()
         super.init()
-        self.setValuesForKeysWithDictionary(dict)
+        self.setValuesForKeys(dict)
     }
 }

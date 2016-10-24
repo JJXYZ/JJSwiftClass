@@ -21,10 +21,10 @@ let view : UIView = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
 
 // 错误写法
 // view = UIView()
-view.backgroundColor = UIColor.redColor()
+view.backgroundColor = UIColor.red
 
 // 在swift中使用枚举:类型.具体的类型
-let btn : UIButton = UIButton(type: UIButtonType.ContactAdd)
+let btn : UIButton = UIButton(type: UIButtonType.contactAdd)
 // btn = UIButton()
 btn.center = CGPoint(x: 50, y: 50)
 

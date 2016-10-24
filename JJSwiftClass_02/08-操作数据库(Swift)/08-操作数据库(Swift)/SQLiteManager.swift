@@ -25,13 +25,13 @@ class SQLiteManager: NSObject {
     // MARK:- 对数据库的操作
     
     // 定义数据库的变量
-    var db : COpaquePointer = nil
+    var db : OpaquePointer? = nil
     
     func openDB() -> Bool {
         // 1.获取文件的路径+文件名称
-        let filePath = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true).first
-        let file = (filePath! as NSString).stringByAppendingPathComponent("test.sqlite")
-        let cFile = (file.cStringUsingEncoding(NSUTF8StringEncoding))!
+        let filePath = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).first
+        let file = (filePath! as NSString).appendingPathComponent("test.sqlite")
+        let cFile = (file.cString(using: String.Encoding.utf8))!
         
         // print(filePath)
         
@@ -53,20 +53,20 @@ class SQLiteManager: NSObject {
         return execSQL(createTableSQL)
     }
     
-    func execSQL(sql : String) -> Bool {
+    func execSQL(_ sql : String) -> Bool {
         // 1.将sql语句转成c语言字符串
-        let cSQL = (sql.cStringUsingEncoding(NSUTF8StringEncoding))!
+        let cSQL = (sql.cString(using: String.Encoding.utf8))!
         
         return sqlite3_exec(db, cSQL, nil, nil, nil) == SQLITE_OK
     }
     
     
-    func querySQL(querySQL : String) -> [[String : AnyObject]]? {
+    func querySQL(_ querySQL : String) -> [[String : AnyObject]]? {
         // 定义游标对象
-        var stmt : COpaquePointer = nil
+        var stmt : OpaquePointer? = nil
         
         // 将查询语句转成C语言的字符串
-        let cQuerySQL = (querySQL.cStringUsingEncoding(NSUTF8StringEncoding))!
+        let cQuerySQL = (querySQL.cString(using: String.Encoding.utf8))!
         
         // 查询的准备工作
         if sqlite3_prepare_v2(db, cQuerySQL, -1, &stmt, nil) != SQLITE_OK {
@@ -84,12 +84,12 @@ class SQLiteManager: NSObject {
             var dict = [String : AnyObject]();
             for i in 0..<count {
                 let cKey = sqlite3_column_name(stmt, i)
-                let key = String(CString: cKey, encoding: NSUTF8StringEncoding)
+                let key = String(CString: cKey, encoding: String.Encoding.utf8)
                 
                 let cValue = UnsafePointer<Int8>(sqlite3_column_text(stmt, i))
-                let value = String(CString: cValue, encoding: NSUTF8StringEncoding)
+                let value = String(CString: cValue, encoding: String.Encoding.utf8)
                 
-                dict[key!] = value!
+                dict[key] = value as AnyObject?
             }
             
             // 3.将字典放入数组中
